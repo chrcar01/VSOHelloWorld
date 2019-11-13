@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace workspace
 {
@@ -6,7 +6,13 @@ namespace workspace
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var customer = new Customer();
+            Console.WriteLine(customer.Name);
         }
+    }
+
+    public class Customer
+    {
+        public string Name { get; } = "Chris";
     }
 }
